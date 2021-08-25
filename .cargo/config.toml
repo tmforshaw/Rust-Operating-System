@@ -1,0 +1,10 @@
+
+[unstable]
+build-std-features = ["compiler-builtins-mem"]
+build-std = ["core", "compiler_builtins"]
+
+[target.'cfg(target_os = "none")'] # Any build with no operating system selected
+runner = "bootimage runner"
+
+[build]
+target = "x86_64-target.json"

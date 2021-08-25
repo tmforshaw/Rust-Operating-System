@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/tmforshaw/Development/Rust/Unnamed_OS/Cargo.toml
+cargo:rustc-link-search=native=/home/tmforshaw/Development/Rust/Unnamed_OS/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-d1cfab6be2d2a3dd/out
+cargo:rustc-link-lib=static=kernel_bin-unnamed_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/tmforshaw/Development/Rust/Unnamed_OS/target/x86_64-target/debug/unnamed_os
+cargo:rerun-if-changed=build.rs
